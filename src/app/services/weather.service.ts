@@ -60,5 +60,6 @@ export class WeatherService {
   saveForecast(weather: WeatherForCity) {
     this._cities.update(w => [...w, weather.location.name]);
     this._forecasts.update(f => [...f, weather]);
+    this.saveCities();
   }
 }
