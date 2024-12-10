@@ -1,0 +1,6 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <div class="add-new-city flex gap-2">
+    <input pInputText type="text" formControlName="city">
+    <p-button [loading]="isLoading()" type="submit">Add</p-button>
+  </div>
+</form>

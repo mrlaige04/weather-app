@@ -1,0 +1,10 @@
+<div class="list">
+  <h3>Cities</h3>
+  <div class="cities-list grid">
+    @for (forecast of forecasts(); track forecast.id) {
+      <div class="city-card lg:col-4 md:col-6 col-12">
+        <app-weather-card [weather]="forecast"></app-weather-card>
+      </div>
+    }
+  </div>
+</div>
