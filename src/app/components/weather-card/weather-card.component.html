@@ -1,0 +1,10 @@
+<div class="city">
+  <p-card [header]="weather().location.name">
+    <div class="weather">
+      {{ weather().current.condition.text }} {{ weather().current.temp_c }}°C ({{ weather().current.temp_f }}°F)
+    </div>
+    <ng-template pTemplate="footer">
+      <p-button severity="danger" icon="pi pi-trash" (onClick)="removeCity()"></p-button>
+    </ng-template>
+  </p-card>
+</div>
